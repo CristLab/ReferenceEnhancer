@@ -6,6 +6,11 @@ readthrough_or_premature_min <- function(name_A, gene_A, name_B, gene_B, gene_A_
   gene_B_start <-  select_gene_B[,'start']
   gene_B_end <- select_gene_B[,'end']
 
+print(gene_A)
+  print(gene_A_end)
+  print(gene_B)
+  print(gene_B_end)
+  
   if(gene_B_end > gene_A_end){
     upstream_name <- name_B
     upstream <- gene_B
