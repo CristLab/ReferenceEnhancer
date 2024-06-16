@@ -104,10 +104,6 @@ OverlapResolutions <- function(genome_annotation, overlap_data, gene_pattern){
           gene_A_exons = return_exons(gene_A)
           gene_B_exons = return_exons(gene_B)
 
-          
-        print(key)
-        print(gene_A_exons)
-
           if(exon_overlap(gene_A_exons, gene_B_exons) == TRUE){
 
             overlap_data[item, 'automatic_classification'] = 'Manual inspection'
