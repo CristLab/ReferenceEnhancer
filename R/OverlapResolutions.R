@@ -136,6 +136,9 @@ OverlapResolutions <- function(genome_annotation, overlap_data, gene_pattern){
         gene_A_exons = return_exons(gene_A)
         gene_B_exons = return_exons(gene_B)
 
+        print(key)
+        print(gene_A_exons)
+
         # Check if both - key and overlapping gene - are pseudogenes
         if(both_pseudo(key, overlapping, gene_pattern) == TRUE){
           overlap_data[key, 'automatic_classification'] = 'Manual inspection'
